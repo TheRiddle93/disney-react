@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ImgSlider from "./ImgSlider";
+import Viewers from "./Viewers";
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ const Container = styled.main`
   ); // 100 vertical height: full height from top to bottom of the view height off the page (adapting to screen size: pc, phone, ipad, etc.) - 70px (header)
   padding: 0 calc(3.5vw + 5px);
   positon: relative;
+  overflow-x: hidden;
 
   &:before {
     background: url("/images/home-background.png") center center / cover
